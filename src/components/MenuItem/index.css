@@ -1,0 +1,118 @@
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border: 2px solid #cdcbcb;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.dish-info {
+  flex: 1;
+  margin-right: 16px;
+}
+@media screen and (max-width: 768px) {
+  .dish-info {
+    max-width: 200px;
+  }
+}
+.dish-info h1 {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 6px;
+  color: #222;
+}
+.dish-info h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #534e4e;
+}
+
+.dish-info p {
+  margin: 4px 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: gray;
+}
+
+.dish-info customizations {
+  font-size: 18px;
+  color: blue;
+  font-weight: 500;
+}
+
+.not-available {
+  font-size: 13px;
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  background-color: green;
+  border-radius: 20px;
+  max-width: 100px;
+  padding: 5px;
+}
+
+.counter button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+}
+
+.counter p {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  color: #fff;
+}
+
+.dish-extra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-extra p {
+  font-size: 15px;
+  color: #ff4d4f;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin: 10px;
+  max-width: 50px;
+}
+
+.dish-image {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  .dish-extra {
+    min-width: 400px;
+  }
+
+  .dish-image {
+    align-self: center;
+    width: 140px;
+    height: 140px;
+  }
+  .dish-extra p {
+    min-width: 150px;
+  }
+}
